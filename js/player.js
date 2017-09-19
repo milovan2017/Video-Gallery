@@ -52,7 +52,6 @@ VideoPlayer.prototype.addRating = function(id,rating){
    xml.addEventListener('readystatechange', function(){
       if (xml.status === 200 && xml.readyState === 4) {
          var text = xml.responseText;
-         console.log(text);
          self.showMyRating();
       }
    })
